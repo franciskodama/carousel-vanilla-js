@@ -1,0 +1,154 @@
+/*
+
+Color Scheme:
+    Blue: #12B3D8
+    Orange: #FF860F
+    Green: #B3F90E
+    Light Gray: #F5F5F5
+
+Fonts:
+    Headings:
+        font-family: 'Roboto Slab', "Times New Roman", Times, Helvetica, serif;
+    
+    Paragraph:
+        font-family: 'Open Sans', "Times New Roman", Times, Helvetica, serif;
+
+*/
+
+/* ====================================
+        STARTERS
+======================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 10;
+  padding: 10;
+}
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 16px;
+  background-color: #313030;
+  color: white;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ====================================
+        LAYOUT
+======================================= */
+
+.carousel {
+  margin-top: 3rem;
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+  display: none;
+}
+
+.carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.txt-over-img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 3rem;
+  color: #ff860f;
+  text-shadow: 0.1rem 0.1rem white;
+}
+
+.carousel-nav {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 44%;
+  z-index: 99;
+}
+
+.carousel-nav-item {
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.carousel-nav-item-visible {
+  color: blue;
+}
+
+/* .carousel-nav-item-hidden {
+  display: none;
+} */
+
+/* 
+.track-img {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 44%;
+  z-index: 99;
+}
+
+.track-img-item {
+  margin-left: 0.5rem;
+}
+
+.track-img-current {
+  position: absolute;
+  top: 85%;
+  left: 45.3%;
+  color: white;
+  z-index: 100;
+} */
+
+.carousel-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carousel-button-prev,
+#carousel-button-next {
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: #ff860f;
+  width: 3rem;
+  height: 3rem;
+}
+
+#carousel-button-prev {
+  margin-left: 1rem;
+}
+
+#carousel-button-next {
+  margin-right: 1rem;
+}
