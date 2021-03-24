@@ -1,17 +1,14 @@
 /*
 
 Color Scheme:
-    Blue: #12B3D8
     Orange: #FF860F
-    Green: #B3F90E
-    Light Gray: #F5F5F5
 
 Fonts:
     Headings:
-        font-family: 'Roboto Slab', "Times New Roman", Times, Helvetica, serif;
+        font-family: 'Nunito Sans', sans-serif;
     
     Paragraph:
-        font-family: 'Open Sans', "Times New Roman", Times, Helvetica, serif;
+        font-family: 'Nunito Sans', sans-serif;
 
 */
 
@@ -21,12 +18,12 @@ Fonts:
 
 * {
   box-sizing: border-box;
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Share Tech Mono", monospace;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   background-color: #313030;
   color: white;
@@ -81,6 +78,11 @@ img {
   font-size: 3rem;
   color: #ff860f;
   text-shadow: 0.1rem 0.1rem white;
+  font-weight: 700;
+}
+
+.carousel {
+  margin-top: 3rem;
 }
 
 .carousel-nav {
@@ -93,37 +95,18 @@ img {
 
 .carousel-nav-item {
   margin-left: 0.5rem;
-  color: white;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
 .carousel-nav-item-visible {
-  color: blue;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #ff860f;
+  border-radius: 50%;
 }
-
-/* .carousel-nav-item-hidden {
-  display: none;
-} */
-
-/* 
-.track-img {
-  display: flex;
-  position: absolute;
-  top: 85%;
-  left: 44%;
-  z-index: 99;
-}
-
-.track-img-item {
-  margin-left: 0.5rem;
-}
-
-.track-img-current {
-  position: absolute;
-  top: 85%;
-  left: 45.3%;
-  color: white;
-  z-index: 100;
-} */
 
 .carousel-actions {
   display: flex;

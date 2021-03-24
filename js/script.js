@@ -46,7 +46,6 @@ function hideAllSlides() {
 function removeAllNavVisible() {
     for (let i = 0; i < 3; i++) {
         bullets[i].classList.remove('carousel-nav-item-visible')
-        console.log("test")
     }
 }
 
